@@ -4,7 +4,8 @@
 }
 body{
 	padding-top: 50px;
-	background-image: linear-gradient(rgb(8, 21, 29) 0%, rgb(11, 55, 60) 100%);
+	background-color: #000000;
+	/* background-image: linear-gradient(rgb(8, 21, 29) 0%, rgb(11, 55, 60) 100%); */
 }
 #box{
 	display: flex;
@@ -29,7 +30,9 @@ body{
 }
 
 #btn{
-	margin: 0 33rem;
+	/* margin: 0 auto; */
+	margin-bottom: 2rem;
+	float: left;
 	height: 30px;
 	width: 80px;
 	font-weight: bold;
@@ -44,6 +47,18 @@ body{
 	background-color: white;
 	padding: 1rem;
 	margin-bottom: 2rem;
-    height: 350px;
-    text-align: center;
+	/* height: auto; */
+	display: flex;
+	text-align: center;
+	justify-content: center;
 }
+.alert {
+	margin: auto;
+	width: 30%;
+	display: none;
+	padding: 15px;
+	border: 1px solid #d6e9c6;
+	border-radius: 4px;
+	color: #000000;
+	background-color: #eb2308;
+  }

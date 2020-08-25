@@ -3,21 +3,29 @@
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="example.css" />
-	<title>JSON2HTMl</title>
+	<link rel="stylesheet" href="style.css" />
+	<title>JSON2HTMl_Test</title>
 </head>
+
 <body>
 
 	<div id="box">
 		<h2 id="heading">Put your json...</h2>
 		<div id="inputBox">
-			<textarea name="jsonData" class="textArea" id="transform" cols="30" rows="10"
-				placeholder="Enter for transform..."></textarea>
+			<textarea name="jsonData" class="textArea" id="transform" cols="30" rows="10" placeholder='Enter your code...'></textarea>
 		</div>
 		<button onclick="getdata()" id="btn">Click</button>
 		<h2 id="heading">Your html result...</h2>
 		<div id="container">
-
+			<div class="alert" id="err1">
+				<strong>Error!</strong> Something went wrong with json conversion...
+			</div>
+			<div class="alert" id="err2">
+				<strong>Error!</strong> Please write something...
+			</div>
+			<div class="alert" id="err3">
+				<strong>Error!</strong> Script error...
+			</div>
 		</div>
 	</div>
 
@@ -25,8 +33,7 @@
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>
 
-	<script type="text/javascript" src="example.js"></script>
-	<script type="text/javascript" src="json2html.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>
